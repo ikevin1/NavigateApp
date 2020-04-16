@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TabbedPageWithNavigationPage.SettingsPage" IconImageSource="settings.png" Title="Settings">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="Settings go here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+            <Entry x:Name="Name"
+           Placeholder="Enter Yo Name"
+           Keyboard="Text"
+           TextColor="DarkBlue"
+           PlaceholderColor="DarkBlue"
+           Completed="NameCompleted"
+           IsVisible="True"
+           HorizontalOptions="Start"
+           WidthRequest="300"
+           Text=""
+         />
+
+            <Entry x:Name="Age"
+           Placeholder="Enter Yo Age"
+           Keyboard="Numeric"
+           TextColor="DarkBlue"
+           PlaceholderColor="DarkBlue"
+           Completed="AgeCompleted"
+           IsVisible="True"
+           HorizontalOptions="Start"
+           WidthRequest="120"
+           Text=""
+         />
+
+            <Label x:Name="showQuiz"
+               TextColor="Navy" FontSize="Title" FontAttributes="Bold"
+               Text="" 
+               HorizontalOptions="Center"
+               IsVisible="false"
+               VerticalOptions="CenterAndExpand"/>
+
+            <Button Text="Verify" x:Name="verifyBtn" Grid.Column="1" IsVisible="false" Clicked="verifyButton" HorizontalOptions="Center" CharacterSpacing="5"  BackgroundColor="#c74c34" BorderColor="Black" TextColor="White" FontSize="Title"/>
+
+
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
